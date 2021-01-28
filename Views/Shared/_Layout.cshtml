@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/img/world-wide-web.png" />
+
+    <title>All About Me</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>@ViewBag.Title</h1>
+
+        <a asp-controller="Home" asp-action="Index">Home</a> <a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a>
+    </header>
+
+    @RenderBody()
+
+    <footer>&copy; 2021 All rights reserved (for the grade)</footer>
+</body>
+</html>

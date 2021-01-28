@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Find out your grade!";
+}
+
+@model GradeCalcModel
+
+<body>
+    <h1>Grade Calculator</h1>
+
+    <form action="#" method="post">
+        <label>Assignments %:(Out of 50)</label>
+        <input asp-for="Assign" />
+        <br />
+        <label>Group Project %:(Out of 10)</label>
+        <input asp-for="Project" />
+        <br />
+        <label>Quizzes %:(Out of 10)</label>
+        <input asp-for="Quiz" />
+        <br />
+        <label>Exams %:(Out of 20)</label>
+        <input asp-for="Exam" />
+        <br />
+        <label>INTEX %:(Out of 10)</label>
+        <input asp-for="Intex" />
+        <br />
+        <br />
+        <input type="submit" value="See Your Grade" id="submitButton" style="height:100px; width:150px" />
+        <br />
+        <div asp-validation-summary="All"></div>
+    </form>
+
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/gradecalc.js"></script>
+</body>
